@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>977</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>My Phone Book</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+QPushButton {
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: 2px solid #2980b9; /* Darker blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px;
+}
+
+QLineEdit {
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+}
+
+QComboBox {
+    background-color: white;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+}
+QComboBox::item
+{
+background-color: white; /* Background color of items */
+ color: black; /* Text color of items */ 
+}
+QComboBox::item:hover 
+{ 
+background-color: #3498db; /* Background color when hovering */
+ color: white; /* Text color when hovering */ 
+}
+QTextEdit {
+    background-color: white;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" rowspan="4">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="firstNameLabel">
+            <property name="text">
+             <string>First Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="PhoneNumberLabel">
+            <property name="text">
+             <string>Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="firstNameLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="emailLabel">
+            <property name="text">
+             <string>Email</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="lastNameLabel">
+            <property name="font">
+             <font>
+              <family>Serif</family>
+              <pointsize>12</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Last Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="phoneNumberLineEdit"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lastNameLineEdit"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="EmailLineEdit"/>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2" colspan="5">
+         <widget class="QLineEdit" name="contactIndexLineEdit"/>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QComboBox" name="phoneTypeCombo">
+          <item>
+           <property name="text">
+            <string>FAX</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>OFFICE</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>WORK</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MAIN</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="ContactIndexLabel">
+          <property name="text">
+           <string>Index</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5" colspan="2">
+         <widget class="QPushButton" name="addNumberPushButton">
+          <property name="text">
+           <string>Add Number</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4" colspan="3">
+         <widget class="QPushButton" name="searchContactButton">
+          <property name="text">
+           <string>Search</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="5">
+         <widget class="QComboBox" name="SortingOrSerachComboBox">
+          <item>
+           <property name="text">
+            <string>Option for searching</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FirstName</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LastName</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Number</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="3" colspan="2">
+         <widget class="QPushButton" name="addContactButton">
+          <property name="text">
+           <string>Add contact</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="3">
+         <widget class="QPushButton" name="deleteContactButton">
+          <property name="text">
+           <string>Delete contact</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QPushButton" name="sortButton">
+          <property name="text">
+           <string>Sort</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="mainTextBrowser">
+        <property name="font">
+         <font>
+          <family>Nimbus Roman</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="showAllContactsButton">
+          <property name="text">
+           <string>Show contacts</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="deleteAllContactsButton">
+          <property name="text">
+           <string>Delete all contact</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveContactsButton">
+          <property name="text">
+           <string>Save</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exitButton">
+          <property name="text">
+           <string>Exit</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>977</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>Phone Book</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>785</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
