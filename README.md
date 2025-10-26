@@ -43,19 +43,10 @@ qmake && make   # or use CMake if provided
 
 ---
 
-## What employers should notice
+## What should notice
 
 * Clear separation between CLI and GUI implementations.
 * Use of modern C++ features where applicable (RAII, smart pointers, STL containers).
 * Basic file I/O and simple persistence in several projects.
 * Documentation in each project folder explaining design decisions and limitations.
 
----
-
-## Tests & examples
-
-Each project folder includes:
-
-* `examples/` — sample data files for quick testing.
-* `README` — commands to run the project and expected outputs.
-* `TODO.md` — improvements and known limitations (shows your growth mindset).
