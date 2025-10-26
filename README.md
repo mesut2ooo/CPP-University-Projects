@@ -66,9 +66,3 @@ Each project folder includes:
 * `examples/` — sample data files for quick testing.
 * `README` — commands to run the project and expected outputs.
 * `TODO.md` — improvements and known limitations (shows your growth mindset).
-
----
-
-## License
-
-MIT — see `LICENSE`. Feel free to use for learning; please attribute if reused.
