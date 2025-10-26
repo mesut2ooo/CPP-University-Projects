@@ -1,10 +1,3 @@
-# cpp-university-projects
-
-Collection of C++ projects and exercises from university coursework: bank management system, phonebook (CLI), phonebook GUI (Qt), and assorted homework examples.
-
-**Repo name suggestion:** `cpp-university-projects`
-
----
 
 ## Overview
 
