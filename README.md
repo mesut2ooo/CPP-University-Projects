@@ -49,6 +49,3 @@ qmake && make   # or use CMake if provided
 * Use of modern C++ features where applicable (RAII, smart pointers, STL containers).
 * Basic file I/O and simple persistence in several projects.
 * Documentation in each project folder explaining design decisions and limitations.
-
-
-
