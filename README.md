@@ -50,3 +50,5 @@ qmake && make   # or use CMake if provided
 * Basic file I/O and simple persistence in several projects.
 * Documentation in each project folder explaining design decisions and limitations.
 
+
+
